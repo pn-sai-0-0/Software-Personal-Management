@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPMS - Software Personnel Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landingPage">
+        <nav class="navbar">
+            <div class="container navbar-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                            <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                            <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="logo-text">SPMS</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="btn btn-primary btn-glow" onclick="openLoginModal()">
+                        <span>Login</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">🚀 Next-Gen Personnel Management</div>
+                    <h1 class="hero-title">
+                        Streamline Your <span class="gradient-text">Software Team</span> Workflows
+                    </h1>
+                    <p class="hero-description">
+                        Comprehensive Software Personnel Management System designed for modern teams. 
+                        Manage projects, track performance, and optimize resource allocation with AI-powered insights.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large btn-glow" onclick="openLoginModal()">
+                            Get Started Free
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-secondary btn-large">
+                            Watch Demo
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M8 6L14 10L8 14V6Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">10K+</div>
+                            <div class="hero-stat-label">Active Users</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">500+</div>
+                            <div class="hero-stat-label">Companies</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">99.9%</div>
+                            <div class="hero-stat-label">Uptime</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Features</span>
+                    <h2 class="section-title">Everything you need to manage your team</h2>
+                    <p class="section-description">Powerful features to streamline your workflow and boost productivity</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card feature-card-hover">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">📊</div>
+                        </div>
+                        <h3>Real-time Analytics</h3>
+                        <p>Track team performance, project progress, and resource utilization with comprehensive analytics dashboards and AI-powered insights.</p>
+                        <a href="#" class="feature-link">Learn more →</a>
+                    </div>
+                    <div class="feature-card feature-card-hover">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">👥</div>
+                        </div>
+                        <h3>Smart Resource Allocation</h3>
+                        <p>Optimize team assignments based on skills, availability, and current workload with intelligent allocation algorithms.</p>
+                        <a href="#" class="feature-link">Learn more →</a>
+                    </div>
+                    <div class="feature-card feature-card-hover">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">🎯</div>
+                        </div>
+                        <h3>Project Management</h3>
+                        <p>Manage projects from inception to completion with timeline tracking, milestone management, and team collaboration tools.</p>
+                        <a href="#" class="feature-link">Learn more →</a>
+                    </div>
+                    <div class="feature-card feature-card-hover">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">📈</div>
+                        </div>
+                        <h3>Performance Tracking</h3>
+                        <p>Monitor individual and team performance with detailed metrics, interactive charts, and insightful performance reports.</p>
+                        <a href="#" class="feature-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="8" fill="white" opacity="0.1"/>
+                                    <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                                    <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                                </svg>
+                            </div>
+                            <span class="logo-text">SPMS</span>
+                        </div>
+                        <p>&copy; 2026 SPMS. All rights reserved.</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Product</h4>
+                            <a href="#">Features</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Security</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <a href="#">About</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Resources</h4>
+                            <a href="#">Documentation</a>
+                            <a href="#">API</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-backdrop" onclick="closeLoginModal()"></div>
+        <div class="modal-content modal-modern">
+            <button class="modal-close" onclick="closeLoginModal()">×</button>
+            <div class="modal-header-modern">
+                <h2>Welcome Back</h2>
+                <p>Sign in to access your dashboard</p>
+            </div>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" required>
+                        <option value="">Select your role</option>
+                        <option value="employee">👤 Employee</option>
+                        <option value="manager">👔 Manager</option>
+                        <option value="hr">🏢 HR</option>
+                        <option value="admin">⚙️ Admin</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">
+                    Sign In
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Notification Panel -->
+    <div id="notificationPanel" class="notification-panel">
+        <div class="notification-header">
+            <h3>Notifications</h3>
+            <button class="btn-icon" onclick="closeNotifications()">×</button>
+        </div>
+        <div class="notification-list" id="notificationList"></div>
+    </div>
+
+    <!-- Employee Dashboard -->
+    <div id="employeeDashboard" class="dashboard hidden">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient2)"/>
+                            <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                            <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="logo-text">SPMS</span>
+                </div>
+                <p class="sidebar-subtitle">Employee Portal</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active" onclick="showView('employee', 'overview')">
+                    <span class="menu-icon">📊</span>
+                    <span>Overview</span>
+                </li>
+                <li onclick="showView('employee', 'projects')">
+                    <span class="menu-icon">📁</span>
+                    <span>My Projects</span>
+                </li>
+                <li onclick="showView('employee', 'performance')">
+                    <span class="menu-icon">📈</span>
+                    <span>Performance</span>
+                </li>
+                <li onclick="showView('employee', 'profile')">
+                    <span class="menu-icon">👤</span>
+                    <span>Profile</span>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="sidebar-user">
+                    <div class="sidebar-user-avatar">JD</div>
+                    <div class="sidebar-user-info">
+                        <div class="sidebar-user-name">John Doe</div>
+                        <div class="sidebar-user-role">Employee</div>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="logout()">
+                    <span>🚪</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <button class="btn-icon" onclick="toggleSidebar()">☰</button>
+                    <div class="breadcrumb">
+                        <span>Dashboard</span>
+                        <span>/</span>
+                        <span id="currentView">Overview</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <button class="btn-icon" onclick="openNotifications()">
+                        🔔
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Employee Overview -->
+            <div id="employee-overview" class="view-content">
+                <div class="page-header">
+                    <div>
+                        <h1>Welcome Back, <span id="empName">John Doe</span> 👋</h1>
+                        <p>Here's what's happening with your projects today</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card stat-card-animated stat-primary">
+                        <div class="stat-icon">📁</div>
+                        <div class="stat-content">
+                            <div class="stat-value">5</div>
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-trend stat-trend-up">↗ 12% from last month</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-success">
+                        <div class="stat-icon">✓</div>
+                        <div class="stat-content">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Tasks Completed</div>
+                            <div class="stat-trend stat-trend-up">↗ 8% from last week</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-warning">
+                        <div class="stat-icon">⏱</div>
+                        <div class="stat-content">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Pending Reviews</div>
+                            <div class="stat-trend stat-trend-down">↘ 2 less than yesterday</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-info">
+                        <div class="stat-icon">⏰</div>
+                        <div class="stat-content">
+                            <div class="stat-value">160</div>
+                            <div class="stat-label">Hours This Month</div>
+                            <div class="stat-trend stat-trend-neutral">→ On track</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">⏰ Upcoming Deadlines</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <div class="deadline-list" id="upcomingDeadlines"></div>
+                    </div>
+
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">📋 Recent Activity</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <div class="timeline" id="recentActivity"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee Projects -->
+            <div id="employee-projects" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>My Projects 📁</h1>
+                        <p>All your assigned projects and their current status</p>
+                    </div>
+                    <button class="btn btn-primary btn-glow" onclick="showToast('Export feature coming soon!')">
+                        Export
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2V10M8 2L5 5M8 2L11 5M2 10V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="filter-panel filter-panel-modern">
+                    <div class="filter-group">
+                        <label>🔍 Sort By</label>
+                        <select id="projectSort" onchange="sortProjects()">
+                            <option value="name">Name (A-Z)</option>
+                            <option value="dueDate">Due Date</option>
+                            <option value="urgency">Urgency Level</option>
+                            <option value="deadline">Deadline (Nearest First)</option>
+                            <option value="status">Status</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>📊 Status</label>
+                        <select id="projectStatusFilter" onchange="filterProjects()">
+                            <option value="all">All Projects</option>
+                            <option value="active">Active</option>
+                            <option value="completed">Completed</option>
+                            <option value="overdue">Overdue</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>⚡ Priority</label>
+                        <select id="projectPriorityFilter" onchange="filterProjects()">
+                            <option value="all">All Priorities</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="employeeProjectsGrid"></div>
+            </div>
+
+            <!-- Employee Performance -->
+            <div id="employee-performance" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Performance Metrics 📈</h1>
+                        <p>Your working hours and performance statistics</p>
+                    </div>
+                </div>
+
+                <div class="filter-panel filter-panel-modern">
+                    <div class="filter-group">
+                        <label>📅 Year</label>
+                        <select id="perfYear" onchange="updatePerformanceChart()">
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>📆 Month</label>
+                        <select id="perfMonth" onchange="updatePerformanceChart()">
+                            <option value="all">All Months</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card stat-card-animated stat-primary">
+                        <div class="stat-icon">💻</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="totalCommits">245</div>
+                            <div class="stat-label">Total Commits</div>
+                            <div class="stat-trend stat-trend-up">↗ 18% increase</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-success">
+                        <div class="stat-icon">⏱</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="avgHours">7.8</div>
+                            <div class="stat-label">Avg Hours/Day</div>
+                            <div class="stat-trend stat-trend-neutral">→ Consistent</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-info">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="productivityScore">92</div>
+                            <div class="stat-label">Productivity Score</div>
+                            <div class="stat-trend stat-trend-up">↗ Excellent</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">⏰ Working Hours Per Day</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <canvas id="hoursChart"></canvas>
+                    </div>
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">💻 Commits Per Day</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <canvas id="commitsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee Profile -->
+            <div id="employee-profile" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>My Profile 👤</h1>
+                        <p>View and manage your profile information</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showToast('Edit mode activated')">
+                        Edit Profile
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M11.3333 2L14 4.66667L5.33333 13.3333H2.66667V10.6667L11.3333 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card card-modern profile-card-center">
+                        <div class="profile-avatar-large">JD</div>
+                        <h2 class="profile-name">John Doe</h2>
+                        <p class="profile-id">EMP-2024-001</p>
+                        <p class="profile-department">Engineering Department</p>
+                        <div class="profile-stats">
+                            <div class="profile-stat">
+                                <div class="profile-stat-value">92%</div>
+                                <div class="profile-stat-label">Performance</div>
+                            </div>
+                            <div class="profile-stat">
+                                <div class="profile-stat-value">5</div>
+                                <div class="profile-stat-label">Projects</div>
+                            </div>
+                            <div class="profile-stat">
+                                <div class="profile-stat-value">12</div>
+                                <div class="profile-stat-label">Tasks Done</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-modern">
+                        <h3 class="card-title">📋 Personal Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Full Name</label>
+                                <p>John Doe</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Employee ID</label>
+                                <p>EMP-2024-001</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Department</label>
+                                <p>Engineering</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Email</label>
+                                <p>john.doe@company.com</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Join Date</label>
+                                <p>January 15, 2024</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Role</label>
+                                <p>Senior Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-modern">
+                    <h3 class="card-title">🎯 Skills & Expertise</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag skill-tag-primary">React</span>
+                        <span class="skill-tag skill-tag-success">Node.js</span>
+                        <span class="skill-tag skill-tag-warning">Python</span>
+                        <span class="skill-tag skill-tag-info">Docker</span>
+                        <span class="skill-tag skill-tag-primary">AWS</span>
+                        <span class="skill-tag skill-tag-success">MongoDB</span>
+                        <span class="skill-tag skill-tag-info">TypeScript</span>
+                        <span class="skill-tag skill-tag-warning">Git</span>
+                        <span class="skill-tag skill-tag-primary">GraphQL</span>
+                        <span class="skill-tag skill-tag-success">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Manager Dashboard -->
+    <div id="managerDashboard" class="dashboard hidden">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient3)"/>
+                            <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                            <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="gradient3" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="logo-text">SPMS</span>
+                </div>
+                <p class="sidebar-subtitle">Manager Portal</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active" onclick="showView('manager', 'overview')">
+                    <span class="menu-icon">📊</span>
+                    <span>Overview</span>
+                </li>
+                <li onclick="showView('manager', 'projects')">
+                    <span class="menu-icon">📁</span>
+                    <span>Project Reports</span>
+                </li>
+                <li onclick="showView('manager', 'workload')">
+                    <span class="menu-icon">⚖️</span>
+                    <span>Workload</span>
+                </li>
+                <li onclick="showView('manager', 'analytics')">
+                    <span class="menu-icon">📈</span>
+                    <span>Analytics</span>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="sidebar-user">
+                    <div class="sidebar-user-avatar">SA</div>
+                    <div class="sidebar-user-info">
+                        <div class="sidebar-user-name">Sarah Adams</div>
+                        <div class="sidebar-user-role">Manager</div>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="logout()">
+                    <span>🚪</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <button class="btn-icon" onclick="toggleSidebar()">☰</button>
+                    <div class="breadcrumb">
+                        <span>Dashboard</span>
+                        <span>/</span>
+                        <span id="managerView">Overview</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <button class="btn-icon" onclick="openNotifications()">
+                        🔔
+                        <span class="notification-badge">5</span>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Manager Overview -->
+            <div id="manager-overview" class="view-content">
+                <div class="page-header">
+                    <div>
+                        <h1>Manager Dashboard 👔</h1>
+                        <p>Comprehensive team overview and performance insights</p>
+                    </div>
+                    <div class="page-header-actions">
+                        <button class="btn btn-secondary" onclick="showToast('Generating report...')">
+                            Generate Report
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2V10M8 2L5 5M8 2L11 5M2 10V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="stats-grid stats-grid-4">
+                    <div class="stat-card stat-card-animated stat-primary">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-content">
+                            <div class="stat-value">24</div>
+                            <div class="stat-label">Team Members</div>
+                            <div class="stat-trend stat-trend-up">↗ 3 new this month</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-success">
+                        <div class="stat-icon">📁</div>
+                        <div class="stat-content">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-trend stat-trend-up">↗ 75% on track</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-warning">
+                        <div class="stat-icon">⚠️</div>
+                        <div class="stat-content">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">At Risk</div>
+                            <div class="stat-trend stat-trend-down">↘ Need attention</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-info">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <div class="stat-value">87%</div>
+                            <div class="stat-label">Team Efficiency</div>
+                            <div class="stat-trend stat-trend-up">↗ +5% this week</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">📊 Team Performance Overview</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <canvas id="teamPerformanceChart"></canvas>
+                    </div>
+
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">🎯 Project Status Distribution</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <canvas id="projectStatusChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card card-modern">
+                    <div class="card-header">
+                        <h3 class="card-title">🔥 High Priority Projects</h3>
+                        <button class="btn btn-sm btn-secondary" onclick="showView('manager', 'projects')">View All →</button>
+                    </div>
+                    <div class="projects-grid-compact" id="managerHighPriorityProjects"></div>
+                </div>
+
+                <div class="card card-modern">
+                    <div class="card-header">
+                        <h3 class="card-title">👥 Team Activity Timeline</h3>
+                        <button class="btn-icon-sm">⋯</button>
+                    </div>
+                    <div class="timeline" id="managerTimeline"></div>
+                </div>
+            </div>
+
+            <!-- Manager Projects -->
+            <div id="manager-projects" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Project Reports 📁</h1>
+                        <p>Detailed analytics and status reports for all projects</p>
+                    </div>
+                    <button class="btn btn-primary btn-glow" onclick="showToast('Export feature coming soon!')">
+                        Export All
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2V10M8 2L5 5M8 2L11 5M2 10V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="filter-panel filter-panel-modern">
+                    <div class="filter-group">
+                        <label>🔍 Search</label>
+                        <input type="text" id="managerProjectSearch" placeholder="Search projects..." oninput="filterManagerProjects()">
+                    </div>
+                    <div class="filter-group">
+                        <label>📊 Status</label>
+                        <select id="managerProjectStatus" onchange="filterManagerProjects()">
+                            <option value="all">All Status</option>
+                            <option value="active">Active</option>
+                            <option value="completed">Completed</option>
+                            <option value="delayed">Delayed</option>
+                            <option value="ontrack">On Track</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>⚡ Priority</label>
+                        <select id="managerProjectPriority" onchange="filterManagerProjects()">
+                            <option value="all">All Priorities</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="managerProjectsGrid"></div>
+            </div>
+
+            <!-- Manager Workload -->
+            <div id="manager-workload" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Team Workload ⚖️</h1>
+                        <p>Monitor team capacity and resource utilization</p>
+                    </div>
+                </div>
+
+                <div class="filter-panel filter-panel-modern">
+                    <div class="filter-group">
+                        <label>🏢 Department</label>
+                        <select id="workloadDeptFilter" onchange="filterWorkload()">
+                            <option value="all">All Departments</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="design">Design</option>
+                            <option value="qa">QA</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>🎯 Skills</label>
+                        <select id="workloadSkillFilter" onchange="filterWorkload()">
+                            <option value="all">All Skills</option>
+                            <option value="react">React</option>
+                            <option value="python">Python</option>
+                            <option value="nodejs">Node.js</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>📊 Workload Level</label>
+                        <select id="workloadLevelFilter" onchange="filterWorkload()">
+                            <option value="all">All Levels</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>🔍 Search</label>
+                        <input type="text" id="workloadSearch" placeholder="Employee ID or Name" oninput="filterWorkload()">
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table data-table-modern" id="workloadTable">
+                        <thead>
+                            <tr>
+                                <th>Employee</th>
+                                <th>Department</th>
+                                <th>Projects</th>
+                                <th>Workload</th>
+                                <th>Status</th>
+                                <th>Hours/Week</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="workloadTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Manager Analytics -->
+            <div id="manager-analytics" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Analytics Dashboard 📈</h1>
+                        <p>Advanced insights and performance metrics</p>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">💼 Resource Utilization</h3>
+                        </div>
+                        <canvas id="resourceChart"></canvas>
+                    </div>
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">⏱ Time Tracking</h3>
+                        </div>
+                        <canvas id="timeTrackingChart"></canvas>
+                    </div>
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">✅ Completion Rate</h3>
+                        </div>
+                        <canvas id="completionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- HR Dashboard -->
+    <div id="hrDashboard" class="dashboard hidden">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient4)"/>
+                            <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                            <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="gradient4" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="logo-text">SPMS</span>
+                </div>
+                <p class="sidebar-subtitle">HR Portal</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active" onclick="showView('hr', 'overview')">
+                    <span class="menu-icon">📊</span>
+                    <span>Overview</span>
+                </li>
+                <li onclick="showView('hr', 'assignment')">
+                    <span class="menu-icon">🎯</span>
+                    <span>Assignment</span>
+                </li>
+                <li onclick="showView('hr', 'employee')">
+                    <span class="menu-icon">👥</span>
+                    <span>Employee</span>
+                </li>
+                <li onclick="showView('hr', 'projects')">
+                    <span class="menu-icon">📋</span>
+                    <span>Projects</span>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="sidebar-user">
+                    <div class="sidebar-user-avatar">EC</div>
+                    <div class="sidebar-user-info">
+                        <div class="sidebar-user-name">Emily Chen</div>
+                        <div class="sidebar-user-role">HR Manager</div>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="logout()">
+                    <span>🚪</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <button class="btn-icon" onclick="toggleSidebar()">☰</button>
+                    <div class="breadcrumb">
+                        <span>Dashboard</span>
+                        <span>/</span>
+                        <span id="hrView">Overview</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <button class="btn-icon" onclick="openNotifications()">
+                        🔔
+                        <span class="notification-badge">4</span>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- HR Overview -->
+            <div id="hr-overview" class="view-content">
+                <div class="page-header">
+                    <div>
+                        <h1>HR Dashboard 🏢</h1>
+                        <p>Resource allocation and employee management</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid stats-grid-4">
+                    <div class="stat-card stat-card-animated stat-primary">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-content">
+                            <div class="stat-value">156</div>
+                            <div class="stat-label">Total Employees</div>
+                            <div class="stat-trend stat-trend-up">↗ 8 joined this month</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-success">
+                        <div class="stat-icon">📁</div>
+                        <div class="stat-content">
+                            <div class="stat-value">32</div>
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-trend stat-trend-neutral">→ Stable</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-warning">
+                        <div class="stat-icon">📋</div>
+                        <div class="stat-content">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Unassigned Projects</div>
+                            <div class="stat-trend stat-trend-down">↘ Needs staffing</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-info">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <div class="stat-value">92%</div>
+                            <div class="stat-label">Allocation Rate</div>
+                            <div class="stat-trend stat-trend-up">↗ Optimal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">🏢 Department Distribution</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <canvas id="deptChart"></canvas>
+                    </div>
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">📋 Recent Activities</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <div class="timeline" id="hrActivities"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HR Assignment -->
+            <div id="hr-assignment" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Project Assignment 🎯</h1>
+                        <p>Assign employees to projects efficiently</p>
+                    </div>
+                </div>
+
+                <div id="assignmentStep1" class="assignment-container">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">Step 1: Select Project</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;">Choose a project to assign team members</p>
+                        </div>
+                        
+                        <div class="filter-panel filter-panel-modern">
+                            <div class="filter-group">
+                                <label>📅 Due Date</label>
+                                <input type="date" id="assignProjectDueDate" onchange="filterAssignmentProjects()">
+                            </div>
+                            <div class="filter-group">
+                                <label>⚡ Urgency</label>
+                                <select id="assignProjectUrgency" onchange="filterAssignmentProjects()">
+                                    <option value="all">All</option>
+                                    <option value="high">High</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="low">Low</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>🔍 Search</label>
+                                <input type="text" id="assignProjectSearch" placeholder="Name or Project Code" oninput="filterAssignmentProjects()">
+                            </div>
+                        </div>
+
+                        <div class="projects-grid" id="assignmentProjectsGrid"></div>
+                    </div>
+                </div>
+
+                <div id="assignmentStep2" class="assignment-container hidden">
+                    <div class="card card-modern">
+                        <div class="assignment-header">
+                            <div>
+                                <h3 class="card-title">Step 2: Assign Employees</h3>
+                                <p class="assignment-project-name" id="selectedProjectName"></p>
+                            </div>
+                            <button class="btn btn-secondary" onclick="backToProjectSelection()">
+                                ← Back to Projects
+                            </button>
+                        </div>
+
+                        <div class="filter-panel filter-panel-modern">
+                            <div class="filter-group">
+                                <label>📊 Project Count</label>
+                                <select id="assignEmpProjectCount" onchange="filterAssignmentEmployees()">
+                                    <option value="all">All</option>
+                                    <option value="0-2">0-2 projects</option>
+                                    <option value="3-4">3-4 projects</option>
+                                    <option value="5+">5+ projects</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>🎯 Skills</label>
+                                <select id="assignEmpSkills" onchange="filterAssignmentEmployees()">
+                                    <option value="all">All Skills</option>
+                                    <option value="react">React</option>
+                                    <option value="python">Python</option>
+                                    <option value="nodejs">Node.js</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>🏢 Department</label>
+                                <select id="assignEmpDept" onchange="filterAssignmentEmployees()">
+                                    <option value="all">All Departments</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="design">Design</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>🔍 Search</label>
+                                <input type="text" id="assignEmpSearch" placeholder="Employee ID or Name" oninput="filterAssignmentEmployees()">
+                            </div>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="employee-pool">
+                                <h4>Available Employees</h4>
+                                <div id="availableEmployees" class="employee-list"></div>
+                            </div>
+                            <div class="employee-pool employee-pool-selected">
+                                <h4>Selected Team <span id="selectedCount">(0)</span></h4>
+                                <div id="selectedEmployees" class="employee-list"></div>
+                            </div>
+                        </div>
+
+                        <div class="assignment-actions">
+                            <button class="btn btn-primary btn-glow" onclick="confirmAssignment()">
+                                Confirm Assignment
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <button class="btn btn-secondary" onclick="clearSelection()">Clear Selection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HR Employee -->
+            <div id="hr-employee" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Employee Tracking 👥</h1>
+                        <p>Comprehensive employee performance and project tracking</p>
+                    </div>
+                    <button class="btn btn-primary btn-glow" onclick="showToast('Export feature coming soon!')">
+                        Export Data
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2V10M8 2L5 5M8 2L11 5M2 10V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="filter-panel filter-panel-modern">
+                    <div class="filter-group">
+                        <label>🏢 Department</label>
+                        <select id="empTrackDept" onchange="filterEmployeeTracking()">
+                            <option value="all">All Departments</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="design">Design</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>🎯 Skills</label>
+                        <select id="empTrackSkills" onchange="filterEmployeeTracking()">
+                            <option value="all">All Skills</option>
+                            <option value="react">React</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>📊 Sort By</label>
+                        <select id="empTrackSort" onchange="filterEmployeeTracking()">
+                            <option value="name">Name</option>
+                            <option value="completed">Projects Completed</option>
+                            <option value="hours">Working Hours</option>
+                            <option value="ontime">On-Time Rate</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>🔍 Search</label>
+                        <input type="text" id="empTrackSearch" placeholder="Employee ID or Name" oninput="filterEmployeeTracking()">
+                    </div>
+                </div>
+
+                <div class="employee-cards-grid" id="employeeTrackingGrid"></div>
+            </div>
+
+            <!-- HR Projects -->
+            <div id="hr-projects" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Projects Management 📋</h1>
+                        <p>View and manage all company projects</p>
+                    </div>
+                </div>
+
+                <div class="filter-panel filter-panel-modern">
+                    <div class="filter-group">
+                        <label>📊 Status</label>
+                        <select id="hrProjectStatus" onchange="filterHRProjects()">
+                            <option value="all">All</option>
+                            <option value="assigned">Assigned</option>
+                            <option value="unassigned">Unassigned</option>
+                            <option value="active">Active</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>⚡ Urgency</label>
+                        <select id="hrProjectUrgency" onchange="filterHRProjects()">
+                            <option value="all">All</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>🔍 Sort By</label>
+                        <select id="hrProjectSort" onchange="filterHRProjects()">
+                            <option value="name">Name</option>
+                            <option value="date">Date Received</option>
+                            <option value="priority">Priority</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>🔎 Search</label>
+                        <input type="text" id="hrProjectSearch" placeholder="Project Code or Name" oninput="filterHRProjects()">
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="hrProjectsGrid"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="dashboard hidden">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient5)"/>
+                            <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                            <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="gradient5" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="logo-text">SPMS</span>
+                </div>
+                <p class="sidebar-subtitle">Admin Portal</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active" onclick="showView('admin', 'overview')">
+                    <span class="menu-icon">📊</span>
+                    <span>Overview</span>
+                </li>
+                <li onclick="showView('admin', 'users')">
+                    <span class="menu-icon">👥</span>
+                    <span>User Management</span>
+                </li>
+                <li onclick="showView('admin', 'projects')">
+                    <span class="menu-icon">📁</span>
+                    <span>Project Registry</span>
+                </li>
+                <li onclick="showView('admin', 'settings')">
+                    <span class="menu-icon">⚙️</span>
+                    <span>Settings</span>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="sidebar-user">
+                    <div class="sidebar-user-avatar">DM</div>
+                    <div class="sidebar-user-info">
+                        <div class="sidebar-user-name">David Martinez</div>
+                        <div class="sidebar-user-role">Admin</div>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="logout()">
+                    <span>🚪</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <button class="btn-icon" onclick="toggleSidebar()">☰</button>
+                    <div class="breadcrumb">
+                        <span>Dashboard</span>
+                        <span>/</span>
+                        <span id="adminView">Overview</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <button class="btn-icon" onclick="openNotifications()">
+                        🔔
+                        <span class="notification-badge">2</span>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Admin Overview -->
+            <div id="admin-overview" class="view-content">
+                <div class="page-header">
+                    <div>
+                        <h1>System Administration ⚙️</h1>
+                        <p>System-wide management and configuration</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid stats-grid-4">
+                    <div class="stat-card stat-card-animated stat-primary">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-content">
+                            <div class="stat-value">156</div>
+                            <div class="stat-label">Total Users</div>
+                            <div class="stat-trend stat-trend-up">↗ 8 new this month</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-success">
+                        <div class="stat-icon">📁</div>
+                        <div class="stat-content">
+                            <div class="stat-value">32</div>
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-trend stat-trend-neutral">→ Stable</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-warning">
+                        <div class="stat-icon">🔑</div>
+                        <div class="stat-content">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">System Roles</div>
+                            <div class="stat-trend stat-trend-neutral">→ Standard</div>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-animated stat-info">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <div class="stat-value">99.8%</div>
+                            <div class="stat-label">System Uptime</div>
+                            <div class="stat-trend stat-trend-up">↗ Excellent</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">📊 System Activity</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <div class="timeline" id="systemActivity"></div>
+                    </div>
+                    <div class="card card-modern">
+                        <div class="card-header">
+                            <h3 class="card-title">👥 User Role Distribution</h3>
+                            <button class="btn-icon-sm">⋯</button>
+                        </div>
+                        <canvas id="roleChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin Users -->
+            <div id="admin-users" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>User Management 👥</h1>
+                        <p>Manage user accounts, roles, and access rights</p>
+                    </div>
+                    <button class="btn btn-primary btn-glow" onclick="openAddUserModal()">
+                        + Add New User
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table data-table-modern">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Last Login</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Admin Projects -->
+            <div id="admin-projects" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>Project Registry 📁</h1>
+                        <p>System-wide project management and archival</p>
+                    </div>
+                    <button class="btn btn-primary btn-glow" onclick="openAddProjectModal()">
+                        + Add New Project
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table data-table-modern">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Manager</th>
+                                <th>Team Size</th>
+                                <th>Status</th>
+                                <th>Created Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projectsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Admin Settings -->
+            <div id="admin-settings" class="view-content hidden">
+                <div class="page-header">
+                    <div>
+                        <h1>System Settings ⚙️</h1>
+                        <p>Configure roles, permissions, and system-wide settings</p>
+                    </div>
+                </div>
+
+                <div class="settings-grid">
+                    <div class="card card-modern">
+                        <h3 class="card-title">🔑 Add New Role</h3>
+                        <form onsubmit="handleAddRole(event)" class="settings-form">
+                            <div class="form-group">
+                                <label>Role Name</label>
+                                <input type="text" placeholder="e.g., Senior Developer" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Role Description</label>
+                                <textarea rows="3" placeholder="Describe the role's responsibilities..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Permissions</label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox"> View Projects
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox"> Edit Projects
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox"> Manage Team
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox"> Access Reports
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-glow">Create Role</button>
+                        </form>
+                    </div>
+
+                    <div class="card card-modern">
+                        <h3 class="card-title">📁 Add Project Template</h3>
+                        <form onsubmit="handleAddProjectTemplate(event)" class="settings-form">
+                            <div class="form-group">
+                                <label>Project Name</label>
+                                <input type="text" placeholder="Enter project name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Project Description</label>
+                                <textarea rows="3" placeholder="Describe the project..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Start Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>End Date</label>
+                                <input type="date" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-glow">Create Template</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card card-modern">
+                    <h3 class="card-title">⚙️ System Configuration</h3>
+                    <form onsubmit="handleSystemConfig(event)">
+                        <div class="config-grid">
+                            <div class="form-group">
+                                <label>Company Name</label>
+                                <input type="text" value="Tech Solutions Inc.">
+                            </div>
+                            <div class="form-group">
+                                <label>System Email</label>
+                                <input type="email" value="system@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Default Working Hours/Week</label>
+                                <input type="number" value="40">
+                            </div>
+                            <div class="form-group">
+                                <label>Max Projects Per Employee</label>
+                                <input type="number" value="5">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-glow">Save Configuration</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- Add User Modal -->
+    <div id="addUserModal" class="modal">
+        <div class="modal-backdrop" onclick="closeModal('addUserModal')"></div>
+        <div class="modal-content modal-modern">
+            <button class="modal-close" onclick="closeModal('addUserModal')">×</button>
+            <div class="modal-header-modern">
+                <h2>Add New User</h2>
+                <p>Create a new user account</p>
+            </div>
+            <form onsubmit="handleAddUser(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="newUserName" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="newUserEmail" placeholder="Enter email address" required>
+                </div>
+                <div class="form-group">
+                    <label>Role</label>
+                    <select id="newUserRole" required>
+                        <option value="">Select role</option>
+                        <option value="employee">Employee</option>
+                        <option value="manager">Manager</option>
+                        <option value="hr">HR</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <input type="text" id="newUserDept" placeholder="Enter department" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">Add User</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit User Modal -->
+    <div id="editUserModal" class="modal">
+        <div class="modal-backdrop" onclick="closeModal('editUserModal')"></div>
+        <div class="modal-content modal-modern">
+            <button class="modal-close" onclick="closeModal('editUserModal')">×</button>
+            <div class="modal-header-modern">
+                <h2>Edit User</h2>
+                <p>Update user information</p>
+            </div>
+            <form onsubmit="handleEditUser(event)">
+                <input type="hidden" id="editUserId">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="editUserName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="editUserEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Role</label>
+                    <select id="editUserRole" required>
+                        <option value="employee">Employee</option>
+                        <option value="manager">Manager</option>
+                        <option value="hr">HR</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <input type="text" id="editUserDept" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Project Modal -->
+    <div id="addProjectModal" class="modal">
+        <div class="modal-backdrop" onclick="closeModal('addProjectModal')"></div>
+        <div class="modal-content modal-modern">
+            <button class="modal-close" onclick="closeModal('addProjectModal')">×</button>
+            <div class="modal-header-modern">
+                <h2>Add New Project</h2>
+                <p>Create a new project</p>
+            </div>
+            <form onsubmit="handleAddProject(event)">
+                <div class="form-group">
+                    <label>Project Name</label>
+                    <input type="text" id="newProjectName" placeholder="Enter project name" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="newProjectDesc" rows="3" placeholder="Project description..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Manager</label>
+                    <select id="newProjectManager" required>
+                        <option value="">Select manager</option>
+                        <option value="Sarah Adams">Sarah Adams</option>
+                        <option value="Robert Brown">Robert Brown</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Start Date</label>
+                    <input type="date" id="newProjectStart" required>
+                </div>
+                <div class="form-group">
+                    <label>End Date</label>
+                    <input type="date" id="newProjectEnd" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">Create Project</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Project Modal -->
+    <div id="editProjectModal" class="modal">
+        <div class="modal-backdrop" onclick="closeModal('editProjectModal')"></div>
+        <div class="modal-content modal-modern">
+            <button class="modal-close" onclick="closeModal('editProjectModal')">×</button>
+            <div class="modal-header-modern">
+                <h2>Edit Project</h2>
+                <p>Update project information</p>
+            </div>
+            <form onsubmit="handleEditProject(event)">
+                <input type="hidden" id="editProjectId">
+                <div class="form-group">
+                    <label>Project Name</label>
+                    <input type="text" id="editProjectName" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="editProjectDesc" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Manager</label>
+                    <select id="editProjectManager" required>
+                        <option value="Sarah Adams">Sarah Adams</option>
+                        <option value="Robert Brown">Robert Brown</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="projectDetailModal" class="modal modal-large">
+        <div class="modal-backdrop" onclick="closeModal('projectDetailModal')"></div>
+        <div class="modal-content modal-content-large modal-modern">
+            <div class="modal-header-flex">
+                <h2 class="modal-header" id="projectDetailTitle"></h2>
+                <button class="modal-close" onclick="closeModal('projectDetailModal')">×</button>
+            </div>
+            <div id="projectDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- Employee Detail Modal (NEW) -->
+    <div id="employeeDetailModal" class="modal modal-large">
+        <div class="modal-backdrop" onclick="closeModal('employeeDetailModal')"></div>
+        <div class="modal-content modal-content-large modal-modern">
+            <div class="modal-header-flex">
+                <h2 class="modal-header" id="employeeDetailTitle"></h2>
+                <button class="modal-close" onclick="closeModal('employeeDetailModal')">×</button>
+            </div>
+            <div id="employeeDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- HR Project Comment Modal -->
+    <div id="hrCommentModal" class="modal">
+        <div class="modal-backdrop" onclick="closeModal('hrCommentModal')"></div>
+        <div class="modal-content modal-modern">
+            <button class="modal-close" onclick="closeModal('hrCommentModal')">×</button>
+            <div class="modal-header-modern">
+                <h2>Add Comment / Instruction</h2>
+                <p>Provide guidance to the project team</p>
+            </div>
+            <form onsubmit="handleAddComment(event)">
+                <input type="hidden" id="commentProjectId">
+                <div class="form-group">
+                    <label>Comment</label>
+                    <textarea id="hrComment" rows="4" placeholder="Enter your comment or instruction..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">Add Comment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
